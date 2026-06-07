@@ -23,7 +23,7 @@
 Требуется **Python 3.8+**.
 
 ```bash
-git clone https://github.com/<ваш-аккаунт>/DragClicker.git
+git clone https://github.com/iljakarpov799/DragClicker.git
 cd DragClicker
 pip install -r requirements.txt
 ```
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ## Запуск
 
 ```bash
-python dclimit.py
+python dragclicker.py
 ```
 
 > Для подавления системной прокрутки на Windows программу может потребоваться
@@ -77,7 +77,7 @@ python dclimit.py
 
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --noconsole --name DragClicker --icon ico.ico --add-data "ico.ico;." dclimit.py
+pyinstaller --onefile --noconsole --name DragClicker --icon ico.ico --add-data "ico.ico;." dragclicker.py
 ```
 
 Готовый `DragClicker.exe` появится в папке `dist/`.
@@ -97,16 +97,8 @@ pyinstaller --onefile --noconsole --name DragClicker --icon ico.ico --add-data "
 
 ```
 DragClicker/
-├── dclimit.py        # основной код программы
+├── dragclicker.py        # основной код программы
 ├── ico.ico           # иконка приложения
 ├── requirements.txt  # зависимости
 └── README.md
 ```
-
----
-
-## Лицензия
-
-Распространяется под лицензией [MIT](LICENSE).
-
-> Не забудьте добавить файл `LICENSE` в репозиторий.
